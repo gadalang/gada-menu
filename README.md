@@ -1,10 +1,10 @@
 # gada-menu
 
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/gada)
-[![Python package](https://img.shields.io/github/workflow/status/gadalang/gada-menu/Python%20package)](https://github.com/gadalang/gada-menu/actions/workflows/python-package.yml)
+[![build](https://github.com/gadalang/gada-menu/actions/workflows/ci.yml/badge.svg)](https://github.com/gadalang/gada-menu/actions/workflows/ci.yml)
 [![Documentation Status](https://readthedocs.org/projects/gada-menu/badge/?version=latest)](https://gada-menu.readthedocs.io/en/latest/?badge=latest)
 [![Codecov](https://img.shields.io/codecov/c/gh/gadalang/gada-menu?token=FDUD389KFM)](https://codecov.io/gh/gadalang/gada-menu)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/gadalang/gada-menu/issues)
 
 Contextual menu for [gada](https://github.com/gadalang/gada).
