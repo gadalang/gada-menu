@@ -18,7 +18,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest]
-        python: ["3.7", "3.8", "3.9"]
+        python: ["3.8", "3.9", "3.10"]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
@@ -34,7 +34,7 @@ jobs:
         run: tox -- -v --color=yes
         env:
           TOXENV: py${{ matrix.python-version}}-cov
-      - if: matrix.python-version == '3.9'
+      - if: matrix.python-version == '3.10'
         name: Publish coverage
         uses: codecov/codecov-action@v1
         with:
