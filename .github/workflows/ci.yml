@@ -5,12 +5,12 @@ on:
     paths-ignore:
       - "**.md"
       - "LICENSE"
-    branches: [master]
+    branches: [main]
   pull_request:
     paths-ignore:
       - "**.md"
       - "LICENSE"
-    branches: [master]
+    branches: [main]
 
 jobs:
   build:
