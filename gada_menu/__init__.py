@@ -4,15 +4,12 @@ import sys
 import argparse
 from context_menu import menus
 
-from . import __version__ as version_info
-from .__version__ import __version_major__, __version_long__, __version__, __status__
-
 from gada import nodeutil
 
 if TYPE_CHECKING:
     from typing import Any
 
-__all__ = ["install", "uninstall", "main", "__version__", "version_info"]
+__all__ = ["install", "uninstall", "main"]
 
 
 def install() -> None:
@@ -70,12 +67,12 @@ def uninstall() -> None:
     for k in ("FILES", "DIRECTORY", "DIRECTORY_BACKGROUND"):
         try:
             menus.removeMenu("Gada", k)
-        except:
+        except Exception:
             pass
 
 
-def main(argv: list[str] | None = None) -> None:
-    """Main entrypoint."""
+def main() -> None:
+    """Control the menu."""
     parser = argparse.ArgumentParser(prog="gada-menu", description="Help")
     parser.add_argument("-v", "--verbose", action="store_true", help="Verbosity level")
     subparsers = parser.add_subparsers(help="sub-command help", required=True)
